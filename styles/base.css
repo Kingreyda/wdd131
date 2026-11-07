@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #1b365d;
+    --secondary-color: #4b6b94;
+    --accent-color: #f4f6f9;
+    --text-color: #333333;
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: var(--secondary-color);
+    padding: 0.75rem;
+}
+
+nav a {
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 400;
+    padding: 0.25rem 0.5rem;
+    transition: background-color 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Hover effects chosen strictly to avoid shifting content layout geometry */
+nav a:hover {
+    background-color: var(--primary-color);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+    text-decoration: underline;
+}
+
+main {
+    max-width: 960px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 0.5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.card {
+    background-color: var(--white);
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+    color: var(--secondary-color);
+    margin-top: 0;
+}
+
+.card img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    max-height: 250px; 
+    object-fit: cover; 
+    border-radius: 4px;
+    margin: 1rem auto;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 1rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}

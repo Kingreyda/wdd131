@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 – Dynamic Web Fundamentals – King David Olaribigbe</title>
+    <meta name="description" content="WDD 131 – Dynamic Web Fundamentals, King David Olaribigbe, landing page containing course info, profile links, and script testing elements.">
+    <meta name="author" content="King David Olaribigbe">
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <script src="scripts/getdates.js" defer></script>
+</head>
+<body>
+    <header>
+        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/olaribigbeking" target="_blank">LinkedIn</a>
+            <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
+            <a href="project/index.html">Final Project</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>King David Olaribigbe</h1>
+        <div class="grid-container">
+            <section class="card">
+                <h2>About Me</h2>
+                <img src="images/profile.jpg" alt="King David Olaribigbe profile photo" width="300" height="200">
+                <p>Welcome to my landing page! I am studying web development to build efficient, dynamic, and accessible user experiences.</p>
+            </section>
+            
+            <section class="card">
+                <h2>Course Details</h2>
+                <img src="images/salt-lake-temple.jpg" alt="Web development graphic placeholder" width="300" height="200">
+                <p>This course covers HTML5 structural semantics, CSS modern layouts using Flexbox and Grid, and client-side modern JavaScript integration.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> | King David Olaribigbe | Nigeria</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
